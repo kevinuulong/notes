@@ -1,0 +1,8 @@
+@import 'colors';
+
+@mixin card($color: $blue, $radius: 35px, $text-color: $white) {
+    border-radius: $radius;
+    background-color: $color;
+    color: $text-color;
+    font-family: 'Montserrat', sans-serif;
+}

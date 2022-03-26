@@ -1,0 +1,148 @@
+@import "colors", "fonts", "mixins", "size", "text";
+
+html,
+body {
+	margin: 0;
+	color: $black;
+}
+
+html {
+	background-color: $gray;
+
+	display: flex;
+	justify-content: center;
+
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	max-width: 1440px;
+	height: 100%;
+	width: 100%;
+	// background-color: $red;
+}
+
+.nav {
+	width: calc(100% - #{$size * 2});
+	height: $size * 6;
+	@include card($color: $white, $text-color: $black, $radius: 35px);
+	margin: $size;
+
+	position: sticky;
+	display: flex;
+	align-items: center;
+	user-select: none;
+}
+
+.logo {
+	width: $size * 4;
+	height: $size * 4;
+	margin: $size;
+	-webkit-user-drag: none;
+}
+
+input {
+	height: $size * 3;
+	background-color: $gray;
+	border-radius: 17px;
+	border: none;
+	padding-left: $size;
+	padding-right: $size;
+	color: $black;
+}
+input:focus {
+	outline: none;
+}
+
+#accessCode {
+	width: $size * 16;
+	position: absolute;
+	right: $size * 8;
+}
+
+.button {
+	@include card($color: $blue, $radius: 17px);
+	height: $size * 3;
+
+	padding-left: $size * 3 / 2;
+	padding-right: $size * 3 / 2;
+	display: flex;
+	text-align: center;
+	align-items: center;
+
+	user-select: none;
+	cursor: pointer;
+
+	position: absolute;
+	right: $size;
+}
+
+.notes {
+    margin: $size * 2;
+}
+
+.notesGrid {
+    margin-top: $size * 2;
+    display: inline-grid;
+    column-gap: $size * 2;
+    grid-template-columns: repeat(auto-fit, $size * 20);
+    grid-auto-flow: dense;
+    width: 100%;
+}
+
+.note {
+	width: $size * 20;
+	height: $size * 14;
+	border-radius: 35px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: $size;
+    margin-left: 0;
+}
+
+.purple {
+	background-color: $purple;
+}
+.green {
+	background-color: $green;
+}
+.red {
+	background-color: $red;
+}
+.orange {
+	background-color: $orange;
+}
+.blue {
+	background-color: $blue;
+}
+.black {
+	background-color: $black;
+}
+.white {
+	background-color: $white;
+}
+
+.details {
+    background-color: $white;
+    position: absolute;
+    bottom: 0;
+    padding: $size;
+    width: 100%;
+    height: $size * 2.5;
+}
+
+.title {
+    color: $black;
+    margin: 0;
+}
+
+.url {
+    width: calc(100% - #{$size * 2});
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    margin-top: $size * 1 / 4;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A single hub for all my shared notes with support for delegated access.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinuulong/notes.git"
+  },
+  "keywords": [],
+  "author": "Kevin Long <kevinuulong@gmail.com> (https://kevinuulong.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinuulong/notes/issues"
+  },
+  "homepage": "https://github.com/kevinuulong/notes#readme"
+}
