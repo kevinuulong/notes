@@ -1,0 +1,84 @@
+@import "colors", "fonts", "mixins", "size", "text";
+
+.nav {
+	width: 100%;
+	height: $size * 13;
+	background-color: $white;
+    color: $black;
+    border-radius: 0 0 17px 17px;
+    margin: 0;
+    display: block;
+
+    h2 {
+        width: calc(100% - #{$size * 10});
+        line-height: $size * 6 !important;
+        margin: 0;
+        vertical-align: top;
+    }
+}
+
+.logo {
+	width: $size * 4;
+	height: $size * 4;
+	margin: $size;
+    margin-left: $size * 2;
+    display: inline-block;
+	-webkit-user-drag: none;
+}
+
+input {
+	height: $size * 3;
+	border-radius: 9px;
+	padding-left: $size;
+	padding-right: $size;
+}
+
+#accessCode {
+	width: $size * 20;
+	position: static;
+    margin-left: $size * 2;
+    margin-right: $size * 2;
+}
+
+.button {
+	@include card($color: $blue, $radius: 9px);
+	height: $size * 3;
+    width: fit-content;
+
+	padding-left: $size * 3 / 2;
+	padding-right: $size * 3 / 2;
+	display: inline-flex;
+
+	position: static;
+}
+
+.notes {
+    margin: $size * 2;
+	margin-top: $size * 16;
+}
+
+.notesGrid {
+    margin-top: $size;
+    column-gap: $size * 2;
+    grid-template-columns: repeat(auto-fit, $size * 32);
+}
+
+.note {
+	width: $size * 32;
+	height: $size * 22;
+	border-radius: 17px;
+    margin: $size;
+    margin-left: 0;
+}
+
+.details {
+    padding: $size;
+    padding-top: $size * 2;
+    width: calc(100% - #{$size * 2});
+    height: $size * 4;
+}
+
+.url {
+    width: 100%;
+    margin-top: $size * 1 / 4;
+}

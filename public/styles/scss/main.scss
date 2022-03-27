@@ -20,16 +20,17 @@ body {
 	max-width: 1440px;
 	height: 100%;
 	width: 100%;
-	// background-color: $red;
 }
 
 .nav {
+	max-width: 1400px;
 	width: calc(100% - #{$size * 2});
 	height: $size * 6;
 	@include card($color: $white, $text-color: $black, $radius: 35px);
 	margin: $size;
 
-	position: sticky;
+	position: fixed;
+	z-index: 99;
 	display: flex;
 	align-items: center;
 	user-select: none;
@@ -80,10 +81,21 @@ input:focus {
 
 .notes {
     margin: $size * 2;
+	margin-top: $size * 9;
+}
+
+body::before {
+	content: "";
+	width: 100%;
+	height: $size * 4;
+	position: fixed;
+	z-index: 98;
+	top: 0;
+	left: 0;
+	background-color: $gray;
 }
 
 .notesGrid {
-    margin-top: $size * 2;
     display: inline-grid;
     column-gap: $size * 2;
     grid-template-columns: repeat(auto-fit, $size * 20);
@@ -145,4 +157,8 @@ input:focus {
     overflow: hidden;
     margin: 0;
     margin-top: $size * 1 / 4;
+}
+
+@media screen and (max-width: #{$size * 47}) {
+	@import "mobile";
 }

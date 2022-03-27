@@ -48,3 +48,31 @@ input {
 input::placeholder {
 	color: rgba(43, 44, 48, 0.5);
 }
+
+@media screen and (max-width: #{$size * 47}) {
+	h1 {
+		font-size: 20px !important;
+		line-height: 24px !important;
+	}
+
+	h2,
+	.button {
+		font-size: 16px !important;
+		line-height: 20px !important;
+	}
+
+	p {
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+
+	a {
+		font-size: 10px !important;
+		line-height: 12px !important;
+	}
+
+	input {
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+}

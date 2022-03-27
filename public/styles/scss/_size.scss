@@ -1,1 +1,5 @@
 $size: 20px;
+
+@media screen and (max-width: #{$size * 47}) {
+	$size: 10px;
+}
