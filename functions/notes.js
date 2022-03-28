@@ -1,4 +1,4 @@
-require('dotenv').config();
+import 'dotenv/config'
 import fetch from "node-fetch";
 
 const handler = async (event) => {
