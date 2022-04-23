@@ -63,6 +63,13 @@ input {
     grid-template-columns: repeat(auto-fit, $size * 32);
 }
 
+.notesGrid:empty {
+	background-image: url("../../images/emptyStateMobile.svg");
+	height: $size * 28;
+    background-position-x: left;
+	background-repeat: no-repeat;
+}
+
 .note {
 	width: $size * 32;
 	height: $size * 22;

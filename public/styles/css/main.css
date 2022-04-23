@@ -220,6 +220,13 @@ body::before {
   margin-left: 0;
 }
 
+.notesGrid:empty {
+  background-image: url("../../images/emptyState.svg");
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .purple {
   background-color: #9b51e0;
 }
@@ -411,6 +418,12 @@ body::before {
             column-gap: 20px;
     -ms-grid-columns: (320px)[auto-fit];
         grid-template-columns: repeat(auto-fit, 320px);
+  }
+  .notesGrid:empty {
+    background-image: url("../../images/emptyStateMobile.svg");
+    height: 280px;
+    background-position-x: left;
+    background-repeat: no-repeat;
   }
   .note {
     width: 320px;

@@ -114,6 +114,13 @@ body::before {
     margin-left: 0;
 }
 
+.notesGrid:empty {
+	background-image: url("../../images/emptyState.svg");
+	height: $size * 28;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .purple {
 	background-color: $purple;
 }
